@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TimeApp.HoursAdded">
+    <ContentPage.Content>
+        <StackLayout
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" >
+            <StackLayout Orientation="Horizontal" Margin="5, 0, 5, 5">
+                <Entry x:Name="Hours" 
+                   Placeholder="Hours"
+                   Keyboard="Numeric"/>
+                <Label Text=":"/>
+                <Entry x:Name="Minutes" Placeholder="Minutes" Keyboard="Numeric"/>
+                
+            </StackLayout>
+            
+            <StackLayout>
+                <Picker x:Name="HoursChangeAmount"/>
+            </StackLayout>
+            
+
+            <Button Clicked="Btn_clicked" Text="Change to Time Zone"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

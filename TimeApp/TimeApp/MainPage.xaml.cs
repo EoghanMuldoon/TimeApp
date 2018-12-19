@@ -22,7 +22,7 @@ namespace TimeApp
             // create list of stuff here.
             InitialiseProper();
             CreateListOfStuff();
-               //test
+             
         }
 
         private void InitialiseProper()
@@ -62,6 +62,11 @@ namespace TimeApp
         private void Hours_TextChanged(object sender, TextChangedEventArgs e)
         {
             DoConversions();
+        }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HoursAdded());
         }
     }
 }
