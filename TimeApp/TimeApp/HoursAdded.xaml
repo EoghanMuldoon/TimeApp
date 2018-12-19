@@ -16,7 +16,7 @@
             </StackLayout>
             
             <StackLayout>
-                <Picker x:Name="HoursChangeAmount"/>
+                <Picker x:Name="HoursChangeAmount"  />
             </StackLayout>
             
 
