@@ -49,6 +49,8 @@ namespace TimeApp
         private void DoConversions()
         {
             double answer;  // local to this method
+            
+
             // call method in conversion class to do the work
             answer = myConverter.convert(Convert.ToDouble(Hours.Text),
                                          pckConversions.SelectedIndex);
@@ -57,11 +59,13 @@ namespace TimeApp
                              answer.ToString("0")+":"+ Minutes.Text + " " +
                              myConverter.OutputUnits;
             lblInputUnits.Text = myConverter.InputUnits;
+            
+
         }
 
         private void Hours_TextChanged(object sender, TextChangedEventArgs e)
         {
-            DoConversions();
+            
         }
 
         private async void Button_Clicked(object sender, EventArgs e)

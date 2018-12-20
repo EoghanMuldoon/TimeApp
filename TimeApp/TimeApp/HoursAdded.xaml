@@ -16,9 +16,15 @@
             </StackLayout>
             
             <StackLayout>
-                <Picker x:Name="HoursChangeAmount"  />
+
+                <Entry x:Name="numberEntered" Placeholder="Enter a Number" Keyboard="Numeric"></Entry>
             </StackLayout>
-            
+
+            <StackLayout>
+                <Label x:Name="output" Text="" />
+                <Button Clicked="Btn_clicked2" Text="Calculate"/>
+            </StackLayout>
+
 
             <Button Clicked="Btn_clicked" Text="Change to Time Zone"/>
         </StackLayout>
